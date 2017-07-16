@@ -1,0 +1,17 @@
+body {
+    background-color: #518416;
+}
+
+th {
+    color: white;
+    font-size: 36px;
+}
+
+tr {
+    color: white;
+    font-size: 24px;
+}
+
+.plot {
+    color: white;
+}

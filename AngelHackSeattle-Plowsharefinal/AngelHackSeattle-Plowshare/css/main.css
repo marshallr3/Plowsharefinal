@@ -1,0 +1,92 @@
+h1 {
+    text-align: center;
+    font-size: x-large;
+}
+
+body {
+    background-color: #518416;
+}
+.plotBox {
+    width: 300px;
+    height: 300px;
+    border: 5px solid #000;
+    margin: auto;
+}
+
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #518416;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1 ;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.dirtPlot {
+    background-image: url("../images/Tile Coloring.svg");
+    background-size: cover;
+}
+
+.chickpeaImg {
+    background-image: url("../images/chickpea.jpg");
+    background-size: cover;
+}
+
+.sesameImg {
+    background-image: url("../images/sesame.jpg");
+    background-size: cover;
+}
+
+.plot {
+    width: 100%;
+    border: 5px solid white;
+    padding: 5%;
+    margin: 0;
+}

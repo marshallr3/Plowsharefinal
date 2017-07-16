@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plowshares</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    <link rel="stylesheet" href="./css/fonts.css">
+
+</head>
+<body>
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="Plowshare.closeNav()">&times;</a>
+    <div class="overlay-content">
+        <a onclick="Plowshare.delete(event)" id="deleteButton">Remove Selected Crop</a>
+    </div>
+</div>
+<div id="tabNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="Plowshare.closeNav()">&times;</a>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Vegetables</th>
+                    <th>Fruits</th>
+                    <th>Herbs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td onclick="Plowshare.chickpeaClick(event)">Chickpeas</td>
+                    <td>Dates</td>
+                    <td onclick="Plowshare.sesameClick(event)">Sesame</td>
+                </tr>
+            <tr>
+                <td>Peppers</td>
+                <td>Prickly Pear</td>
+                <td>Curry</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
